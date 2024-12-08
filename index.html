@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainforest Alliance</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Rainforest Alliance</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navbar desktop">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="statistics.html">Statistics</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="navbar mobile">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="statistics.html">Statistics</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+    </header>
+    <main>
+        <section class="banner">
+            <img src="images/banner.jpg">
+            <h1 class="fade-in">Protecting Nature, Improving Lives</h1>
+            <p class="slide-up">Partner with us to build a sustainable world.</p>
+        </section>
+        <section class="daily-fact">
+            <div class="fact-content">
+                <img src="images/fact-image.jpg" alt="Rainforest Image">
+                <div class="fact-text">
+                    <h2>Did You Know?</h2>
+                    <p>
+                        The Amazon rainforest is home to over 400 billion individual trees, making it one of the most biodiverse places on Earth.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <img src="images/lizard.png" alt="Rainforest view" class="background-image">
+            <div class="text-overlay">
+                <h2 class="reveal">Our Mission</h2>
+                <p>
+                    The Rainforest Alliance is committed to conserving biodiversity and ensuring sustainable livelihoods by transforming land-use practices, business practices, and consumer behavior.
+                </p>
+                <p>
+                    Through programs in certification, landscape management, advocacy, and supply chain services, we help farmers, companies, and governments protect forests and foster climate resilience.
+                </p>
+            </div>
+        </section>
+        <section class="content">
+            <img src="images/farmers.jpg" alt="Farmers supported by Rainforest Alliance" class="background-image">
+            <div class="text-overlay">
+                <h2 class="reveal">Our Impact</h2>
+                <p>
+                    Since our founding in 1987, we have worked in over 70 countries, supporting farmers, forest communities, and governments to protect biodiversity and reduce climate change impacts.
+                </p>
+                
+                <div class="impact-table">
+                    <div class="impact-item">
+                        <h3>Improved practices on 6.8 million hectares of farmland</h3>
+                        <p>We’ve helped farmers improve their land management practices, increasing crop yields and reducing environmental impact.</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>Restored critical ecosystems to combat deforestation</h3>
+                        <p>Our projects have focused on ecosystem restoration, fighting deforestation and enhancing biodiversity.</p>
+                    </div>
+                    <div class="impact-item">
+                        <h3>Enabled over 2 million farmers to adopt sustainable techniques</h3>
+                        <p>Through training and support, we’ve empowered farmers to use sustainable farming techniques that are better for the environment and their livelihoods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carousel-section">
+            <h2>Latest from Us</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <!-- Carousel Items -->
+                    <div class="carousel-item">
+                        <img src="images/news1.webp" alt="News 1">
+                        <p>Short news paragraph 1. This is an example text.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/news2.webp" alt="News 2">
+                        <p>Short news paragraph 2. Another example text.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/news3.webp" alt="News 3">
+                        <p>Short news paragraph 3. More example text.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/news4.webp" alt="News 4">
+                        <p>Short news paragraph 4. Final example text.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Short news paragraph 5. Final example text.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Buttons -->
+            <button class="scroll-btn left-btn" onclick="scrollCarousel(-1)">&#10094;</button>
+            <button class="scroll-btn right-btn" onclick="scrollCarousel(1)">&#10095;</button>
+            <div></div>
+        </section>    
+
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="statistics.html">Statistics</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Rainforest Alliance | Designed for education</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Purpose: describe the goal of the Rainforest Allience company
+Audience: farmers and governments
+Graphics: Images and statistics of the performed work
+Color: green and white and their gradation
+Accessibility: keyboard navigation.
+
+4 pages:
+Home, contacts, statistics, About Us
+
+General Design: modern:
+
+Logo in the top left, sticky header with links,
+Big banner for the whole screen with header overlay
+main content
+some image again
+footer with links

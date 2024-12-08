@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainforest Alliance - Statistics</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For graphs -->
+</head>
+<body>
+    <header>
+        <div class="logo">Rainforest Alliance</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="navbar desktop">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="statistics.html">Statistics</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <nav class="navbar mobile">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="statistics.html">Statistics</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="statistics-banner">
+            <h1>Rainforest Statistics</h1>
+            <p>Explore the impact of our efforts through data and graphs.</p>
+        </section>
+
+        <section class="statistics-content">
+            <div class="stat-item">
+                <h2>Deforestation Over Time</h2>
+                <canvas id="deforestationChart"></canvas>
+            </div>
+            <div class="stat-item">
+                <h2>Carbon Emissions Reduced</h2>
+                <canvas id="emissionsChart"></canvas>
+            </div>
+            <div class="stat-item">
+                <h2>Tree Species Distribution</h2>
+                <canvas id="treeChart"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="statistics.html">Statistics</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <p>&copy; 2024 Rainforest Alliance | Designed for education</p>
+    </footer>
+
+    <script>
+        // Deforestation Chart
+        const deforestationCtx = document.getElementById('deforestationChart').getContext('2d');
+        new Chart(deforestationCtx, {
+            type: 'line',
+            data: {
+                labels: ['2015', '2016', '2017', '2018', '2019', '2020', '2021'],
+                datasets: [{
+                    label: 'Deforestation (million hectares)',
+                    data: [18, 16, 14, 15, 13, 12, 10],
+                    borderColor: '#F77F00',
+                    tension: 0.3,
+                    fill: true,
+                    backgroundColor: 'rgba(247, 127, 0, 0.2)',
+                }]
+            },
+        });
+
+        // Carbon Emissions Chart
+        const emissionsCtx = document.getElementById('emissionsChart').getContext('2d');
+        new Chart(emissionsCtx, {
+            type: 'bar',
+            data: {
+                labels: ['2018', '2019', '2020', '2021', '2022'],
+                datasets: [{
+                    label: 'Emissions Reduced (million tons)',
+                    data: [5, 7, 10, 12, 15],
+                    backgroundColor: '#1E90FF',
+                }]
+            },
+        });
+
+        // Tree Species Chart
+        const treeCtx = document.getElementById('treeChart').getContext('2d');
+        new Chart(treeCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Oak', 'Pine', 'Mahogany', 'Cedar', 'Other'],
+                datasets: [{
+                    data: [40, 30, 15, 10, 5],
+                    backgroundColor: ['#4CAF50', '#8BC34A', '#FF5722', '#FFC107', '#03A9F4']
+                }]
+            },
+        });
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
